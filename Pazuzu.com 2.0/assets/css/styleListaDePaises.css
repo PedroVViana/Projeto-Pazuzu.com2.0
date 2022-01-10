@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+header ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    z-index: 100;
+}
+
+header ul li, header ul li a {
+    position: relative;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: #fff;
+    color: black;
+}
+
+header p {
+    color: #fff;
+    font-family: 'Eater', cursive;
+    margin: 20px;
+    font-size: 22px;
+    position: relative;
+    top: 0;
+    left: -560px;
+}
+
+section h1 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+section p {
+    margin: 20px 120px;
+    text-align: justify;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+}
+
+.content .btn-J {
+    position: relative;
+    width: 350px;
+    height: 555px;
+    margin: 20px;
+    background: rgba(255, 255, 255,0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.459);
+    border-top: 1px solid rgba(255, 255, 255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255,0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+}
+
+.content .btn-J .text h2{
+    z-index: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content .btn-J .text p {
+    font-size: 9.7px;
+    text-align: justify;
+    margin: 0 15px;
+}
+
+.content .btn-J .text img {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.content .btn-J::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 80px;
+    height: 15px;
+    background: #af06f1;
+    border-radius: 10px;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+    transition-delay: 0s;
+    box-shadow: 0 0 5px #af06f1,
+    0 0 15px #af06f1,
+    0 0 30px #af06f1,
+    0 0 60px #af06f1,
+    0 0 120px #af06f1,
+    0 0 140px #af06f1;
+}
+
+.content .btn-J:hover::before {
+    bottom: 0;
+    height: 5px;
+    width: 85%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.content .btn-J .text img#Kairo {
+    border-radius: 10px;
+    margin-left: 26px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+header ul {
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    z-index: 100;
+}
+
+header ul li, header ul li a {
+    position: relative;
+    padding: 13px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: #fff;
+    color: black;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section img#stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    animation: staranimate 2s infinite linear;
+
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+    animation: moonanimate 2s  linear;
+}
+
+
+section img#cemiterio {
+    z-index: 9;
+    animation: arvEanimate 3s  forwards linear;
+}
+
+section img#arvE {
+    position: absolute;
+    top: 0px;
+    left: -190px;
+    width: 900px;
+    animation: arvEanimate 3s  forwards linear;
+}
+
+section img#arvD {
+    position: absolute;
+    top: -120px;
+    left: 600px;
+    width: 750px;
+    height: 800px;
+    z-index: 10;
+    animation: arvEanimate 3s  forwards linear;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, #2d0a36, transparent);
+    z-index: 100;
+    bottom: 0;
+}
+
+header .logo {
+    position: absolute;
+    z-index: 100;
+}
+
+header .logo img {
+    position: absolute;
+    width: 100px;
+    top: 85px;
+    left: -50px;
+    opacity: 0;
+}
+
+header .logo img:hover {
+    position: absolute;
+    width: 150px;
+    top: 65px;
+    left: -75px;
+    opacity: 1;
+    transition: 3s;
+}
+
+
+header .logo a {
+    position: absolute;
+    font-size: 72px;
+    font-family: 'Eater', cursive;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    left: -225px;
+    top: 250px;
+    z-index: 100;
+}
+
+@keyframes staranimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+@keyframes moonanimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes arvEanimate {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
